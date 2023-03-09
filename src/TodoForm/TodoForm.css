@@ -1,0 +1,81 @@
+form {
+              width: 90%;
+              max-width: 300px;
+              background-color: #85c1e2;
+              padding: 33px 40px;
+              border: solid  rgba(3, 38, 58, 0.5);
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              }
+
+label {
+              text-align: center;
+              font-weight: bold;
+              font-size: 20px;
+              color: #1E1E1F;
+              margin-bottom: 26px;
+              }
+
+textarea {
+              background-color: #d2e8f4;
+              border: 2px solid #202329;
+              border-radius: 2px;
+              box-shadow: 0px 5px 50px rgba(21, 22, 25, 0.25);
+              color: #1E1E1F;
+              font-size: 20px;
+              text-align: center;
+              padding: 12px;
+              height: 96px;
+              width: calc(100% - 25px);
+              resize: none;
+              }
+              
+              textarea::placeholder {
+              color: #2b1717;
+              font-family: 'Montserrat';
+              font-weight: 400;
+              }
+
+              textarea:focus {
+              outline-color: #0b404f;
+              }
+
+              .TodoForm-buttonContainer {
+              margin-top: 14px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+              }
+
+              .TodoForm-button {
+              cursor: pointer;
+              display: inline-block;
+              font-size: 20px;
+              color: #202329;
+              font-weight: 400;
+              width: 120px;
+              height: 48px;
+              border-radius: 3px;
+              font-family: 'Montserrat';
+              }
+
+              .TodoForm-button:hover{
+              font-weight: bold;
+              }
+
+              .TodoForm-button--add {
+              background: #45c6ea;
+              box-shadow: 0px 5px 25px rgba(16, 75, 92, 0.5);
+              border: solid 1px black;
+              }
+
+              .TodoForm-button--cancel {
+              background: transparent;
+              border: solid 1px black;
+              box-shadow: 0px 5px 25px rgba(16, 75, 92, 0.5);
+              }
+            
