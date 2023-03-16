@@ -20,7 +20,7 @@
   }
   .TodoItem-p--complete {
     text-decoration: line-through;
-    color: brown;
+    color: rgb(171, 57, 57);
   }
   
   .Icon {
@@ -48,5 +48,6 @@
     right: 12px;
   }
   .Icon-delete:hover {
-    color: red;
+    color: rgb(164, 16, 16);
+    
   };

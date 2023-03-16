@@ -52,7 +52,7 @@ function TodoProvider(props ){
       const deleteTodo= ( text )=> {
       const todoIndex = todos.findIndex( todo=>todo.text === text );
       const newTodos = [...todos];
-      newTodos.splice( todoIndex.onclick ,1 );
+      newTodos.splice( todoIndex ,1 );
       saveTodos ( newTodos );
     };  
             
