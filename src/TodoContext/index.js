@@ -11,7 +11,7 @@ function TodoProvider(props ){
     error,
     } = useLocalStorage('TODOS_V1', [ ]);
   
-   const [searchValue, setSearchValue]= React.useState(' ');
+   const [searchValue, setSearchValue]= React.useState('');
 
    const [openModal, setOpenModal] = React.useState(false);
   
@@ -20,7 +20,7 @@ function TodoProvider(props ){
   
    let searchedTodos = [ ];
   
-   if (!searchValue.length >= 1){
+   if (searchValue.length === 0){
       searchedTodos = [];
     } else{  
       searchedTodos = todos.filter(todo =>{
@@ -30,7 +30,7 @@ function TodoProvider(props ){
       });
       
     }
-  
+  console.log(searchValue.length)
     const addTodo = (text)=> {
       const newTodos = [...todos];
     newTodos.push({
