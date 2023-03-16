@@ -9,7 +9,7 @@ function TodoProvider(props ){
     saveItem: saveTodos,
     loading,
     error,
-    } = useLocalStorage('TODOS_V1', [ ]);
+    } = useLocalStorage('TODOS_V1', []);
   
    const [searchValue, setSearchValue]= React.useState('');
 
@@ -18,7 +18,7 @@ function TodoProvider(props ){
    const completedTodos = todos.filter(todo=>!!todo.completed).length;
    const totalTodos = todos.length;
   
-   let searchedTodos = [ ];
+   let searchedTodos = [];
   
    if (searchValue.length === 0){
       searchedTodos = [];
@@ -30,7 +30,7 @@ function TodoProvider(props ){
       });
       
     }
-  console.log(searchValue.length)
+
     const addTodo = (text)=> {
       const newTodos = [...todos];
     newTodos.push({
