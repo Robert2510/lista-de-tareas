@@ -1,0 +1,19 @@
+
+.EmpatyTodo{
+              position: fixed;
+              background: #c7e5f5;
+              margin-top: 60px;
+              left: 30%;
+              right: 30%;
+              justify-content: center;
+              height: 80px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #1E1E1F;
+              border-radius: 3px;
+              border: solid 2px black;
+              font-weight: bold;
+              font-size: 18px;
+              box-shadow: 0px 8px 50px  rgba(12, 13, 15, 0.50);
+ }
