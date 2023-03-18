@@ -7,9 +7,9 @@ import { TodoItem } from './TodoItem';
 import { TodoForm } from "../TodoForm/TodoForm";
 import { CreateTodoButton } from './CreateTodoButton'
 import { Modal } from "./Modal/Modal";
-import { TodoError } from "./TodoError";
-import { TodoLoading } from "./TodoLoading";
-import { EmpatyTodo } from "./EmptyTodo";
+import { TodoError } from "./skeletons/TodoError";
+import { TodoLoading } from "./skeletons/TodoLoading";
+import { EmpatyTodo } from "./skeletons/EmptyTodo";
 
 
 import './App.css';
@@ -31,7 +31,7 @@ function AppUI( ){
     return(
       <React.Fragment>
         <TodoCounter  />
-        
+
         <TodoSearch />
 
         <TodoList >
