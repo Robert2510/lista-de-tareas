@@ -3,15 +3,15 @@ import { TodoContext } from "../TodoContext";
 import './TodoForm.css';
 
 function TodoForm( ){
-    const [newTodoValue, setNewTodoValue] = React.useState(' ');
+    const [newTodoValue, setNewTodoValue] = React.useState('');
     const {
         addTodo,
         setOpenModal,
     } = React.useContext(TodoContext);
 
-    const onChange =( event) =>{
-              setNewTodoValue(event.target.value);
-          };
+    const onChange =(event) =>{
+      setNewTodoValue(event.target.value);
+       };
 
    const oncancel =( ) =>{
        setOpenModal( false );
@@ -29,7 +29,7 @@ function TodoForm( ){
             <textarea
                value ={ newTodoValue }
                onChange ={ onChange}
-             placeholder="llalllal"
+             placeholder=""
             />
             <div className="TodoForm-buttonContainer">
               <button type="button"
