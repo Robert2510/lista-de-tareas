@@ -9,7 +9,7 @@ function useLocalStorage(itemName, initialValue){
   React.useEffect( ()=>{
     setTimeout( ( )=>{
       try{
-        const localStorageItem= localStorage.getItem('TODOS_V1');
+        const localStorageItem= localStorage.getItem('TODOS-V1');
         let parsedItem;    
           if (!localStorageItem){
               localStorage.setItem('itemName', JSON.stringify(initialValue));

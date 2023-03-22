@@ -1,11 +1,12 @@
 
+
 .TodoSearch {
     background: #d2e8f4;
-    border-radius: 3px;
-    border: 2px solid #202329;
+    border-radius: 4px;
+    border: 3px solid #202329;
     margin: 0 24px;
-    height: 64px;
-   width: calc(100% - 70px);
+    height: 40px;
+   width: calc(100% -  70px);
     font-size: 24px;
     text-align: center;
     font-family: 'Montserrat';
@@ -16,9 +17,9 @@
 }
 
 .TodoSearch::placeholder{
-    color: #8c8888;
-  font-family: 'Montserrat';
-  font-weight: 400;
+    color: #342929;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
 
 }
 

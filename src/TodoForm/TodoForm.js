@@ -11,21 +11,26 @@ function TodoForm( ){
 
     const onChange =(event) =>{
       setNewTodoValue(event.target.value);
+    
        };
 
    const oncancel =( ) =>{
        setOpenModal( false );
-   };
-
+   };   
+    
    const onSubmit = (event ) =>{
-       event.preventDefault( )
-      addTodo( newTodoValue );
-      setOpenModal( false);
-   };
+       event.preventDefault( );
+      if(newTodoValue.length===0){
+        alert("Debes agregar una taarea")
+      }else{
+         addTodo( newTodoValue );
+         setOpenModal( false);
+      }                
+   } 
+
    return(
       <form onSubmit={ onSubmit }>
-
-            <label>Escribe tu nueva tarea</label>
+          <label>Escribe tu nueva tarea</label>
             <textarea
                value ={ newTodoValue }
                onChange ={ onChange}
@@ -45,9 +50,13 @@ function TodoForm( ){
             </div>
 
       </form>
+   )
+   
+
+   
       
       
-    );
-}
+    
+};
 
 export { TodoForm };

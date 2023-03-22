@@ -16,13 +16,15 @@ function TodoSearch () {
     return(
         <input
          className='TodoSearch'  
-         placeholder =''
+         placeholder ='Buscar tarea'
          value={searchValue}
          onChange={onSearchValueChange}
           />
 
     );
-
 }
+    
+
+
 
 export {TodoSearch};
