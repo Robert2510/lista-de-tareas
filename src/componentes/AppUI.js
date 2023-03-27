@@ -27,7 +27,7 @@ function AppUI( ){
     } = React.useContext(TodoContext);
 
     const list = searchedTodos.length>0 ? searchedTodos : todos;
-
+      console.log(todos);
     return(
       <React.Fragment>
         <TodoCounter  />

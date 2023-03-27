@@ -1,4 +1,5 @@
 import React from "react";
+import { TodoList } from "../componentes/TodoList";
 import { TodoContext } from "../TodoContext";
 import './TodoForm.css';
 
@@ -7,6 +8,7 @@ function TodoForm( ){
     const {
         addTodo,
         setOpenModal,
+        todos,
     } = React.useContext(TodoContext);
 
     const onChange =(event) =>{
@@ -16,17 +18,27 @@ function TodoForm( ){
 
    const oncancel =( ) =>{
        setOpenModal( false );
-   };   
-    
+   }; 
+
+
+  
+   
+
    const onSubmit = (event ) =>{
        event.preventDefault( );
+       const exists=todos.some(function(todo){
+        return   todo.text===newTodoValue;
+       })
+
       if(newTodoValue.length===0){
-        alert("Debes agregar una taarea")
-      }else{
-         addTodo( newTodoValue );
-         setOpenModal( false);
-      }                
-   } 
+        alert("Debes agregar una taarea");
+      } else if (exists===true){
+        alert("Ya tienes ingresada esta tarea");
+      } else{
+            addTodo( newTodoValue );
+            setOpenModal( false);
+      }
+   }
 
    return(
       <form onSubmit={ onSubmit }>
@@ -51,12 +63,6 @@ function TodoForm( ){
 
       </form>
    )
-   
-
-   
-      
-      
-    
 };
 
 export { TodoForm };

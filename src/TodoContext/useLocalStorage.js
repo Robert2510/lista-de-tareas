@@ -9,10 +9,10 @@ function useLocalStorage(itemName, initialValue){
   React.useEffect( ()=>{
     setTimeout( ( )=>{
       try{
-        const localStorageItem= localStorage.getItem('TODOS-V1');
+        const localStorageItem= localStorage.getItem(itemName);
         let parsedItem;    
           if (!localStorageItem){
-              localStorage.setItem('itemName', JSON.stringify(initialValue));
+              localStorage.setItem(itemName, JSON.stringify(initialValue));
               parsedItem = initialValue;
             } else{
                   parsedItem = JSON.parse(localStorageItem);
@@ -29,7 +29,7 @@ function useLocalStorage(itemName, initialValue){
             const saveItem = (newItem)=>{
               try{
                 const stringifyItem = JSON.stringify(newItem);
-                localStorage.setItem('itemName',  stringifyItem );
+                localStorage.setItem(itemName,  stringifyItem );
                 setItem(newItem);  
               }catch(error){
                 setError(error)
