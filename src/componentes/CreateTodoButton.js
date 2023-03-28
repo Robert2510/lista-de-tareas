@@ -15,8 +15,7 @@ function  CreateTodoButton ( ) {
          onClick = {onClickButton}
          >
             +
-             </button>
-
+        </button>
     );
     }
 
