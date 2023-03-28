@@ -2,7 +2,7 @@
 
 .TodoSearch {
     background: #d2e8f4;
-    border-radius: 4px;
+    border-radius: 3px;
     border: 3px solid #202329;
     margin: 0 24px;
     height: 40px;
@@ -17,13 +17,14 @@
 }
 
 .TodoSearch::placeholder{
-    color: #342929;
+    color:  #052f46;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: 500;
+  font-weight: bold;
+
 
 }
 
 .TodoSearch:focus {
-    outline-color: #064a5d;
+    outline-color: #add7e3;
     
 }

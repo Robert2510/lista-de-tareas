@@ -4,11 +4,12 @@
     border: solid 3px rgba(17, 35, 46, 0.5);
     position: relative;
     display: flex;
-    
+    margin-left: 30px;
+    margin-right: 30px;    
     justify-content: center;
     align-items: center;
     margin-top: 24px;
-    box-shadow: 0px 5px 40px rgba(9, 9, 9, 0.3);
+    box-shadow: 0px 5px 40px rgba(46, 40, 40, 0.3);
   }
   
   .TodoItem-p {
