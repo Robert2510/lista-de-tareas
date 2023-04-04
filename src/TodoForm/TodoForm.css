@@ -78,4 +78,33 @@ textarea {
               border: solid 1px black;
               box-shadow: 0px 5px 25px rgba(16, 75, 92, 0.5);
               }
+
+              @media(max-width:460px){
+              form{
+              max-width: 200px;
+              padding: 25px 30px;
+              }
+              label{
+               font-size: 12px;
+               margin-bottom: 20px;
+              }
+              textarea{
+               font-size: 12px;
+               padding: 10px;
+               height: 70px;
+               width: calc(100% - 55px);
+              }
+              .TodoForm-buttonContainer {
+              width: 85%;
+              }
+
+              .TodoForm-button{
+               font-size: 12px;
+               width: 80px;
+              height: 30px; 
+              padding: 0;
+
+              }
+              
+              }
             

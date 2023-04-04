@@ -3,8 +3,8 @@
     background-color: #66bfda;
     border: solid 4px  rgba(15, 49, 71, 0.5);
     border-radius: 50%;
-    width:70px;
-    height: 70px;
+    width:65px;
+    height: 65px;
     left: 70px;
     top: 20px;
     cursor: pointer;
@@ -35,22 +35,73 @@
 }
  
   
- .CreateTodoButton:hover {
+.CreateTodoButton:hover {
     background-color:#3f7a97 ;
     color:#063b4a ;
     transform: rotate(360deg);
     border: solid 4px #063b4a ;
-    font-size: 50px; 
+    
  }
 
-@media(max-width:750px){
+ @media(max-width:750px){
     .CreateTodoButton{
-    
         width: 60px;
-        height: 60px; 
+        height: 60px;
+        border-radius: 50%;
         left: 50px;
+        font-size: 42px;
+    }
+ }
+
+@media(max-width:915px){
+    .CreateTodoButton{
+        top: 25px;    
     }
 }
+
+@media(max-width:640px){
+    .CreateTodoButton{
+        left: 45px;
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 35px;
+        border: solid 3px;
+    }
+}
+@media(max-width:555px){
+    .CreateTodoButton{
+        width: 42px;
+        height: 42px;
+        left: 35px;
+        font-size: 32px;
+        border: solid 3px;
+        top: 20px;
+        
+    }
+}
+@media(max-width:445px){
+  .CreateTodoButton{
+    left:20px ;
+    font-size: 28px;        
+  }
+}
+@media(max-width:395px){
+    .CreateTodoButton{
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
+        left: 20px;
+        top: 10px;
+    }
+}
+@media(max-width:325px){
+    .CreateTodoButton{
+        left:15px ;
+    }
+}
+
+ 
 
 
  

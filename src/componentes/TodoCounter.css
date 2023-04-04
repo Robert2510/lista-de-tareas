@@ -1,9 +1,47 @@
 
 .TodoCounter {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    margin: 0;
+    margin: 15px;
     padding: 20px;
 }
+
+@media(max-width:915px){
+    .TodoCounter{
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 20px;
+    }
+}
+
+@media(max-width:640px){
+    .TodoCounter{
+        font-size:18px ;
+    }
+}
+
+@media(max-width:555px){
+    .TodoCounter{
+        font-size:16px ;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:420px){
+    .TodoCounter{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:395px){
+    .TodoCounter{
+        font-size:12px ;
+        margin-top:10px;
+        margin-bottom: 5px;
+    }
+}
+
+
