@@ -11,5 +11,11 @@
   color: rgb(201, 183, 183);
 }
 
+@media(max-width:915px){
+  .ModalBackground{
+    position: absolute;
+  }
+}
+
 
     
