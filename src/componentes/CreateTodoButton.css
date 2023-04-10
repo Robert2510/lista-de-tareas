@@ -43,6 +43,7 @@
     
  }
 
+
  @media(max-width:750px){
     .CreateTodoButton{
         width: 60px;
@@ -100,6 +101,11 @@
         left:15px ;
     }
 }
+
+.active{
+    display: none;
+}
+
 
  
 
