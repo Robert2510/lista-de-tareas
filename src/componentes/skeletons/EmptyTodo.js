@@ -1,13 +1,22 @@
 import React from "react";
 import './EmpatyTodo.css';
+import { TodoContext } from "../../TodoContext";
 
 function EmpatyTodo( ){
-              return (
-                            <div className="EmpatyTodo">
-                                <p>Crea tu primer tarea</p>
-                            </div>
-                            
-              )
+    const {openModal,setOpenModal}= React.useContext(TodoContext);
+  
+    const onClickButton = ( )=>{
+      setOpenModal (!openModal);      
+    };
+    return (
+        <bottom className="EmpatyTodo"
+            onClick={onClickButton}>
+
+            <p>Crea tu primer tarea</p>
+
+        </bottom>
+                
+    )
 }
 
 export { EmpatyTodo };

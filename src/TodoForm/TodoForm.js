@@ -19,11 +19,7 @@ function TodoForm( ){
    const oncancel =( ) =>{
        setOpenModal( false );
    }; 
-
-
-  
    
-
    const onSubmit = (event ) =>{
        event.preventDefault( );
        const exists=todos.some(function(todo){
@@ -32,8 +28,10 @@ function TodoForm( ){
 
       if(newTodoValue.length===0){
         alert("Debes agregar una taarea");
+
       } else if (exists===true){
         alert("Ya tienes ingresada esta tarea");
+
       } else{
             addTodo( newTodoValue );
             setOpenModal( false);
@@ -42,24 +40,24 @@ function TodoForm( ){
 
    return(
       <form onSubmit={ onSubmit }>
-          <label>Escribe tu nueva tarea</label>
-            <textarea
-               value ={ newTodoValue }
-               onChange ={ onChange}
-             placeholder=""
-            />
-            <div className="TodoForm-buttonContainer">
-              <button type="button"
-                    className="TodoForm-button TodoForm-button--cancel"
-                    onClick={ oncancel }>
-                    Cancelar
-              </button>
+        <label>Escribe tu nueva tarea</label>
+        <textarea
+          value ={ newTodoValue }
+          onChange ={ onChange}
+        placeholder=""
+        />
+        <div className="TodoForm-buttonContainer">
+          <button type="button"
+            className="TodoForm-button TodoForm-button--cancel"
+            onClick={ oncancel }>
+            Cancelar
+          </button>
 
-              <button type="submit"
-                    className="TodoForm-button TodoForm-button--add">
-                    Añadir
-              </button>
-            </div>
+          <button type="submit"
+            className="TodoForm-button TodoForm-button--add">
+            Añadir
+          </button>
+        </div>
 
       </form>
    )

@@ -15,54 +15,58 @@ import { EmpatyTodo } from "./skeletons/EmptyTodo";
 import './App.css';
 
 function AppUI( ){
-    const {
-      error,
-      loading,
-      searchedTodos,
-      completeTodo,
-      deleteTodo,
-      openModal,
-      setOpenModal,
-      todos,
-    } = React.useContext(TodoContext);
+  const {
+    error,
+    loading,
+    searchedTodos,
+    completeTodo,
+    deleteTodo,
+    openModal,
+    setOpenModal,
+    todos,
+    
+  } = React.useContext(TodoContext);
 
-    const list = searchedTodos.length>0 ? searchedTodos : todos;
+  const list = searchedTodos.length>0 ? searchedTodos : todos;  
+  
+  return(
+    <React.Fragment>
 
-    return(
-      <React.Fragment>
-        <TodoCounter  />
+      <TodoCounter  />
 
-        <TodoSearch />
+      <TodoSearch />
 
-        <TodoList >
-          {error && <TodoError error={ error }/>}
-          { loading && <TodoLoading/>}
-          {( !loading && !list.length) && <EmpatyTodo/>}
+      <TodoList >
+        {error && <TodoError error={ error }/>}
+        { loading && <TodoLoading/>}
+        {( !loading &&!list.length) && <EmpatyTodo/>}
+        
+        {list.map (todo =>(
+      <TodoItem
+          key = {todo.text}
+          text={todo.text} 
+          completed={todo.completed}
+          onCompleted = {( )=>completeTodo(todo.text)}
+          onDelete = {( )=>deleteTodo(todo.text)}
+        />
+    )) }
+        </TodoList>
 
-          {list.map (todo =>(
-        <TodoItem
-            key = {todo.text}
-            text={todo.text} 
-            completed={todo.completed}
-            onCompleted = {( )=>completeTodo(todo.text)}
-            onDelete = {( )=>deleteTodo(todo.text)}
-          />
-      )) }
-          </TodoList>
+        {!!openModal &&(
+          <Modal>
+          <TodoForm/>
 
-         {!!openModal &&(
-           <Modal>
-            <TodoForm/>
+        </Modal>
+        )}
 
-         </Modal>
-         )}
-                              
-          <CreateTodoButton 
-          setOpenModal= {setOpenModal}
-          />
+      {list.length>0 &&(                  
+     <CreateTodoButton
+        setOpenModal= {setOpenModal}
+        />)}
 
   </React.Fragment>
    );
  }
 
 export{AppUI};
+

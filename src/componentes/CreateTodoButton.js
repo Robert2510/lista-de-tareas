@@ -6,12 +6,11 @@ function  CreateTodoButton ( ) {
   const {openModal,setOpenModal}= React.useContext(TodoContext);
   
     const onClickButton = ( )=>{
-      setOpenModal (!openModal);      
-    };
-
+      setOpenModal (!openModal); 
+    };             
     return(
         <button
-         className =' CreateTodoButton'
+         className =' CreateTodoButton '
          onClick = {onClickButton}
          >
             +
