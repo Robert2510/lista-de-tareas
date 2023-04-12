@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Robert2510/lista-de-tareas/static/css/main.d0df5f65.css",
+    "main.js": "/Robert2510/lista-de-tareas/static/js/main.f9188f59.js",
+    "index.html": "/Robert2510/lista-de-tareas/index.html",
+    "main.d0df5f65.css.map": "/Robert2510/lista-de-tareas/static/css/main.d0df5f65.css.map",
+    "main.f9188f59.js.map": "/Robert2510/lista-de-tareas/static/js/main.f9188f59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0df5f65.css",
+    "static/js/main.f9188f59.js"
+  ]
+}
