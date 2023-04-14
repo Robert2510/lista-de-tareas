@@ -1,5 +1,5 @@
 {
-  "name": "primer-ejercicio",
+  "name": "lista-de-tareas",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,5 +40,5 @@
   "devDependencies": {
     "gh-pages": "^5.0.0"
   },
-  "homepage": "https://Robert2510.github.io/primer-ejercicio"
+  "homepage": "https://Robert2510.github.io/lista-de-tareas"
 }
